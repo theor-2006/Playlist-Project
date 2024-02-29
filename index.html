@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PlayList Project!</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
 
-    <link type="text/css" rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-  </head>
+<body>
+  <h1><marquee>Theo's Playlist</marquee></h1>
+    <br>
+  <div class="heading">
+    <h4>Album Cover</h4>
+    <h4>Song Name</h4>
+    <h4>Artist</h4>
+    <h4>YouTube Link</h4>
+  </div>
 
-  <body>
-    <h1>My Playlist</h1>
-    <div class="form">
-      <p>Add a new song:</p>
-      <input placeholder="Song Title" class="title" />
-      <input placeholder="Artist Name" class="artist" />
-      <input placeholder="Image URL" class="image" />
-      <input placeholder="Song Link Address" class="link" />
-      <button class="add-input">Add</button>
-    </div>
-    <div class="display">
-      <div class="column images"></div>
-      <div class="column songs"></div>
-      <div class="column artists"></div>
-      <div class="column lengths"></div>
-      <div class="column links"></div>
-    </div>
-  </body>
+  <div class="display">
+    <div class="column display-image"></div>
+    <div class="column display-song"></div>
+    <div class="column display-artist"></div>
+    <div class="column display-link"></div>
+  </div>
+<br>
+  <img class="plusSym" 
+    src=https://static.thenounproject.com/png/261370-200.png>
+  
+  <div class="form">
+    <p></p>
+  <p>Add a new song here</p>
+  <div class="inputs">
+    <input placeholder = "Album Cover URL" class="image" value="" />
+    <input placeholder = "Song Name" class="song-name" value="" />
+    <input placeholder = "Artist" class="artist" value="" />
+    <input placeholder= "Youtube URL" class="song-link" value="" />
+  </div>
+  <br>
+    <button class="add">Add</button>
+</body>
+<script src=script.js></script>
+
 </html>
