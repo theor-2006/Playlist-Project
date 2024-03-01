@@ -15,12 +15,12 @@ let displayLink = document.querySelector(".display-link");
 let displayadd=document.querySelector(".form");
 
 
-// task 7: create and populate an array to store your image urls. Create three more arrays. One to store your song names, one for the artists, and a last one for the song links.
+// Task 7: create and populate an array to store your image urls. Create three more arrays. One to store your song names, one for the artists, and a last one for the song links.
 let image = [
-"https://media.pitchfork.com/photos/5cd0900c5a46c21b62097a79/16:9/w_3632,h_2043,c_limit/Tyler-the-Creator-IGOR.jpeg"]
-let songNames = [ "I THINK"]
-let artist = ["Tyler, The Creator"]
-let songLinks = [ "https://www.youtube.com/watch?v=rkRdgFvuiYk"]
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqm-cLTZTKZe5PcVuXQOvWqn3pqBAev1yMe_WzJrrVKw&s","https://upload.wikimedia.org/wikipedia/en/7/7b/AmericanDream.jpeg", "https://upload.wikimedia.org/wikipedia/en/8/8b/Future_-_Life_Is_Good.png", "https://media.pitchfork.com/photos/5929fbff0c2bba1b7de03f1a/1:1/w_450%2Cc_limit/2d538998.jpg", "https://audiok.ir/wp-content/uploads/2021/12/IMG_20211216_160354.jpg"]
+let songNames = [ "I THINK", " all of me", " Life Is Good", " A.D.H.D", "The Color Violet"]
+let artist = ["Tyler The Creator", " 21 Savage", " Future, Drake", " Kendrick Lamar", "Tory Lanez"]
+let songLinks = [ "https://www.youtube.com/watch?v=rkRdgFvuiYk", "https://www.youtube.com/watch?v=UpYb4C2--UY", "https://www.youtube.com/watch?v=l0U7SxXHkPY", "https://www.youtube.com/watch?app=desktop&v=QjlFqgRbICY", "https://www.youtube.com/watch?v=07fhkAoCnig"]
 
 
 function addSongInfo() {
@@ -67,15 +67,13 @@ for(let imageNum=0; imageNum<image.length; imageNum++) {
   };
 }
 
-
-
 // Event to add and display songs
 add.onclick = function() {
   addSongInfo();
   displaySongInfo();
 };
 
-//this is for the plus button that makes the form appear and disappear when clicked 
+//Plus button code
 plusButton.addEventListener("click",function(){
 
   displayadd.style.display="block"
