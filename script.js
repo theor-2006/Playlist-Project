@@ -2,18 +2,16 @@
 let songName = document.querySelector(".song-name");
 let artists = document.querySelector(".artist");
 let songLink = document.querySelector(".song-link");
-
 let add = document.querySelector(".add");
 let plusButton = document.querySelector(".plusSym");
 
-// task 6: declare variables for your display divs: the image url, song name, artist, and song link. Go back to the HTML to check that you are using the correct class names.
+// Task 6: declare variables for your display divs: the image url, song name, artist, and song link. Go back to the HTML to check that you are using the correct class names.
 let display = document.querySelector(".display");
 let displaySong = document.querySelector(".display-song");
 let displayArtist = document.querySelector(".display-artist");
 let displayImage = document.querySelector(".display-image");
 let displayLink = document.querySelector(".display-link");
 let displayadd=document.querySelector(".form");
-
 
 // Task 7: create and populate an array to store your image urls. Create three more arrays. One to store your song names, one for the artists, and a last one for the song links.
 let image = [
@@ -22,6 +20,7 @@ let songNames = [ "I THINK", " all of me", " Life Is Good", " A.D.H.D", "The Col
 let artist = ["Tyler The Creator", " 21 Savage", " Future, Drake", " Kendrick Lamar", "Tory Lanez"]
 let songLinks = [ "https://www.youtube.com/watch?v=rkRdgFvuiYk", "https://www.youtube.com/watch?v=UpYb4C2--UY", "https://www.youtube.com/watch?v=l0U7SxXHkPY", "https://www.youtube.com/watch?app=desktop&v=QjlFqgRbICY", "https://www.youtube.com/watch?v=07fhkAoCnig"]
 
+//math.random
 
 function addSongInfo() {
   let ImageEntry =document.querySelector(".image").value;
@@ -46,9 +45,9 @@ function emptyDisplay() {
 }
 
 function displaySongInfo() {
-
   emptyDisplay()
-// task 8: loop through your images array and display the images to your songs in the correct div. Create three more loops. One for the song names, one for the artists, and a last one for the song links.
+  
+// Task 8: loop through your images array and display the images to your songs in the correct div. Create three more loops. One for the song names, one for the artists, and a last one for the song links.
 for(let imageNum=0; imageNum<image.length; imageNum++) {
   displayImage.insertAdjacentHTML("beforeend",`<img src="${image[imageNum]}">`);
 }
@@ -63,23 +62,20 @@ for(let imageNum=0; imageNum<image.length; imageNum++) {
 
   for(let link=0; link<songLinks.length; link++){
     displayLink.insertAdjacentHTML("beforeend", "<a href="+songLinks[link]+">"+"play"+"</a>");
-
   };
 }
 
-// Event to add and display songs
+//Add and display songs
 add.onclick = function() {
   addSongInfo();
   displaySongInfo();
 };
 
-//Plus button code
+//Plus button
 plusButton.addEventListener("click",function(){
-
   displayadd.style.display="block"
 });
 plusButton.addEventListener("dblclick",function(){
-
   displayadd.style.display="none"
 });
 

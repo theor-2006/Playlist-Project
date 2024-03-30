@@ -77,15 +77,12 @@ button {
 
 body {
   background-image:linear-gradient(to right,#00a3d7,#ff4013,#77bb41) ;
-  color:#000000; 
+  color:#000000;
 }
 
-  
 h4{
   color: #ebebeb;
 }
 .plusSym{
   width: 100px;
 }
-
-/* text-shadow: white 1px 1px;
